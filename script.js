@@ -44,21 +44,18 @@ function validarCEP(cep) {
     return /^[0-9]{8}$/.test(cep);
 }
 
-// ✅ Função para buscar informações do CEP na API do ViaCEP
 async function buscarCEP(cep) {
     const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
     verificarStatusHTTP(response);
     return await response.json();
 }
 
-// ✅ Atualiza os campos do endereço no HTML usando innerHTML corretamente
 function atualizarEndereco(cepInfo) {
     document.getElementById('logradouro').innerHTML = cepInfo.logradouro || "--";
     document.getElementById('bairro').innerHTML = cepInfo.bairro || "--";
     document.getElementById('estado').innerHTML = `${cepInfo.localidade || "--"}/${cepInfo.uf || "--"}`;
 }
 
-// ✅ Função para buscar previsão do tempo usando cidade e estado do CEP
 async function buscarPrevisaoDoTempo(cidade, estado) {
     const coordenadas = await buscarCoordenadas(cidade, estado);
     if (!coordenadas) {
@@ -75,7 +72,6 @@ async function buscarPrevisaoDoTempo(cidade, estado) {
     document.getElementById('tempLocal').innerHTML = `Previsão de tempo: ${data.hourly.temperature_2m[0]}°C`;
 }
 
-// ✅ Função para buscar latitude e longitude da cidade e estado
 async function buscarCoordenadas(cidade, estado) {
     const url = `https://nominatim.openstreetmap.org/search?city=${cidade}&state=${estado}&country=Brazil&format=json`;
     const response = await fetch(url);
@@ -89,7 +85,6 @@ async function buscarCoordenadas(cidade, estado) {
     }
 }
 
-// ✅ Verifica se a resposta HTTP da API está correta
 function verificarStatusHTTP(response) {
     if (!response.ok) {
         throw new Error(`Erro na requisição: Status ${response.status}`);
