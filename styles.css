@@ -1,0 +1,163 @@
+*{
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    margin: 0;
+}
+
+body{
+    background-color: #f2f2f2 !important;
+}
+
+nav{
+    background-color: #0C70F2;
+}
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 2rem;
+    margin-bottom: 10rem;
+}
+
+.header-principal > h2{
+    font-size: 5rem;
+    font-weight: 800;
+    padding: 8rem 1rem;
+}
+
+.image-principal img {
+    max-width: 100%;
+    height: auto;
+}
+
+main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario{
+    background-color: #fff;
+    border-radius: 3rem;
+    width: 85.9rem;
+    height: 93rem;
+    font-size: 2.5rem;
+    padding: 12rem 10rem 0rem 10rem;
+    margin-bottom: 5rem;
+}
+
+form div > .formTitle{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+}
+
+form div > .formInput{
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    border-radius: 1rem;
+    height: 5.5rem;
+    background-color: #f2f2f2;
+}
+
+form button{
+    margin-top: 8rem;
+}
+
+.resultadoCep {
+    display: flex;
+    align-items: center;
+    justify-content: row;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.titleCep {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+}
+
+.titleCep p {
+    font-size: 2rem; 
+    font-weight: 800;
+    color: #333;
+    margin-right: 0rem;
+}
+
+.titleCep img {
+    width: 16rem; 
+    height: auto;
+    margin-top: -5rem;
+    margin-right: 5rem;
+}
+
+.resultados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buscaCepSuperior {
+    display: flex;
+    width: 100rem;
+    max-width: 100rem;
+    align-items: center;
+    margin-top: 1.5rem;
+    border-radius: 3rem 3rem 0 0;
+    background-color: #0C70F2;
+    color: #fff;
+}
+
+.titles{
+    font-weight: 800;
+    padding: 2rem 0rem 2rem 5rem;
+}
+
+.buscaCepInferior{
+    display: flex;
+    width: 100%;
+    max-width: 100rem;
+    align-items: center;
+    border-radius: 0rem 0rem 3rem 3rem;
+    background-color: #FFF;
+    margin-bottom: 10rem;
+}
+
+#title1{
+    margin-left: 3rem !important;
+}
+
+#title2{
+    margin-left: 5rem !important;
+}
+
+#title3{
+    margin-left: 7rem !important;
+}
+
+.resultadoTempoPesquisa {
+    background-color: #fff;
+    border: 1px solid #0C70F2;
+    border-radius: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 20rem;
+    padding: 2rem 0rem 2rem 0rem;
+    font-weight: 800;
+    width: 102.4rem;
+    max-width: 95rem;
+    text-align: center;
+}
+
+footer {
+    background-color: #0C70F2;
+    color: #fff;
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-align: right;
+}
+
+footer h3{
+    padding: 3rem 3rem 3rem
+}
